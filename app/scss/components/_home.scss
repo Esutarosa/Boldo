@@ -1,0 +1,86 @@
+.home {
+    background-color: $dark-blue;
+
+    &__container {
+        padding-top: 1.5rem;
+        row-gap: 3.5rem;
+    }
+
+    &__content {
+        row-gap: 3rem;
+    }
+
+    &__data {
+        text-align: center;
+        color: $white;
+    }
+
+    &__title {
+        font: {
+            size: 2.25rem;
+            family: $second-font;
+        }
+        color: $white;
+        line-height: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin-bottom: 2.5rem;
+        font-size: 1.25rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+
+    &__button {
+        &-first {
+            background-color: $light-green;
+	        border: 2px solid $light-green;
+            color: $dark-blue;
+            transition: background .3s, border .3s, color .4s;
+            &:hover {
+                background-color: transparent;
+	            border: 2px solid $white;
+                color: $white;
+            }
+        }
+
+        &-second {
+            transition: background .3s, color .4s;
+            &:hover {
+                background-color: $white;
+                color: $dark-blue;
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 420px;
+        margin: 0 auto;
+    }
+
+    &__logos {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    &__logo {
+        width: 150px;
+
+        &:nth-child(3) {
+            order: 1;
+        }
+
+        &:nth-child(6) {
+            order: 1;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: transparent;
+    transition: background .4s;
+
+    .nav {
+        height: $header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &__logo, &__toggle {
+            color: $white;
+            display: flex;
+        }
+    
+        &__logo {
+            align-items: center;
+            column-gap: .5rem;
+            font: {
+                family: $second-font;
+                weight: $font-bold;
+                size: 1.5rem;
+            }
+    
+            & img {
+                width: 1rem;
+                filter: drop-shadow(0px 4px 4px hsla(220, 12%, 4%, .3));
+            }
+        }
+    
+        &__toggle {
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+    
+        &__list {
+            padding: 5rem 0 0 3rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5rem;
+        }
+    
+        &__link {
+            color: $white;
+            transition: color .3s;
+    
+            &:hover {
+                color: $light-green;
+            }
+        }
+    
+        &__close {
+            position: absolute;
+            top: .8rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            color: $white;
+            cursor: pointer;
+        }
+    
+        &__button {
+            color: $dark-blue;
+            background-color: $white;
+            transition: background .3s, color .4s;
+            &:hover {
+                background-color: transparent;
+                color: $white;
+            }
+        }
+    }
+}
+
+@include for-navigation-menu {
+    .nav {
+        &__menu {
+            position: fixed;
+            background-color: hsla(209, 73%, 15%, .1);
+            background-color: $dark-blue;
+            font-size: 1rem;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            height: 120vh;
+            border-left: 2px solid $white;
+            transition: right .3s;
+        }
+    }
+}
+
+.show-menu {
+	right: 0;
+}
+
+.bg-header {
+    background-color: $dark-blue;
+    box-shadow: 0 8px 16px hsla(220, 12%, 4%, .3);
+}

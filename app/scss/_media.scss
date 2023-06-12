@@ -1,0 +1,312 @@
+@include for-phone-only {
+	.container {
+		margin-inline: 1rem;
+	}
+
+    .section,
+    .product,
+    .customers,
+    .about,
+    .faq,
+    .start {
+        &__title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .home {
+        &__title {
+            font-size: 1.75rem;
+        }
+
+        &__text {
+            font-size: 1.15rem;
+        }
+
+        &__logos {
+            width: 260px;
+        }
+    }
+
+    .blog {
+        &__content {
+            grid-template-columns: 240px;
+        }
+    }
+
+    .footer {
+        &__data {
+            gap: 2rem;
+        }
+    }
+}
+
+@include for-phone-home {
+    .home {
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1.5rem;
+        }
+    }
+
+    .about {
+        &__card {
+            max-width: 280px;
+        }
+    }
+}
+
+@include for-phone-large {
+    .home {
+        &__text {
+            width: 350px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .start {
+        &__contant {
+            grid-template-columns: 460px;
+            justify-content: center;
+        }
+    }
+
+    .product,
+    .customers {
+        &__content {
+            width: 480px;
+            margin: 0 auto;
+        }
+    }
+
+    .footer {
+        &__contant {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: space-around;
+        }
+
+        &__text {
+            width: 180px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@include for-tablet-portrait-up {
+    .home,
+    .product,
+    .customers {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        &__data, &__text, &__buttons, &__button {
+            width: initial;
+            text-align: initial;
+            justify-content: initial;
+        }
+
+        &__logos {
+            width: 450px;
+            margin-top: 4rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .section {
+        &__title {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+    }
+
+    .services,
+    .blog {
+        &__content {
+            grid-template-columns: repeat(2, 320px);
+            gap: 2rem;
+            justify-content: center;
+        }
+    }
+
+    .services {
+        &__card {
+            margin-top: 2rem;   
+        }
+    }
+
+    .product,
+    .customers {
+        &__content {
+            width: initial;
+        }
+    }
+
+    .product {
+        &__container {
+            grid-template: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+
+    .customers {
+        &__content {
+            order: -1;
+        }
+    }
+
+    .about {
+        &__title {
+            max-width: 420px;
+            text-align: initial;
+        }
+    }
+
+    .faq {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        &__title {
+            max-width: 420px;
+            text-align: initial;
+            margin-bottom: initial;
+            margin-right: 2rem;
+        }
+    }
+
+    .start {
+        &__contant {
+            grid-template-columns: 560px;
+            justify-content: center;
+        }
+
+        &__form {
+            grid-template-columns: 1fr max-content;
+            column-gap: 1.5rem;
+        }
+    }
+}
+
+@include for-tablet-landscape-up {
+    .header .nav {
+        height: calc($header-height + 1rem);
+    }
+
+    .nav {
+        .nav__close, .nav__toggle {
+            display: none;
+        }
+
+        .nav__list {
+            align-items: center;
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+
+        .nav__menu {
+            margin-bottom: 5rem;
+            font-size: 1rem;
+        }
+    }  
+    
+    .home {
+        &__img {
+            width: 500px;
+        }
+    }
+}
+
+@include for-desktop-up {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 5rem 2rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .nav__logo {
+        font-size: 1.75rem;
+    }
+
+    .nav {
+        &__logo {
+            margin-right: 21rem;
+        }
+    }
+
+    .home {
+        &__data {
+            max-width: 520px;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+
+        &__logos {
+            width: 100%;
+            max-width: 1100px;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+    .section,
+    .product,
+    .customers,
+    .about,
+    .faq,
+    .start {
+        &__subtitle {
+            font-size: 1.25rem;
+        }
+
+        &__title {
+            max-width: 800px;
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+    }
+
+    .services,
+    .blog {
+        &__content {
+            grid-template-columns: repeat(3, 320px);
+            gap: 6.25rem;
+        }
+    }
+
+    .footer {
+        &__data {
+            grid-template-columns: repeat(3, max-content);
+            column-gap: 10rem;
+        }
+
+        &__contant {
+            justify-content: space-between;
+        }
+
+        &__text {
+            width: 360px;
+            margin: 0 auto;
+        }
+    }
+}

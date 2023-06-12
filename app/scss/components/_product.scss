@@ -1,0 +1,65 @@
+.product {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+		line-height: 2.5rem;
+    }
+
+    &__content, &__faq {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__faq {
+        &-header {
+            display: flex;
+            align-items: center;
+            column-gap: .75rem;
+        }
+
+        &-title {
+            font-size: 1.25rem;
+        }
+
+        &-icon {
+            display: inline-flex;
+            padding: .4rem;
+            background-color: $dark-blue;
+            color: $white;
+            font-size: 1.15rem;
+            border-radius: 50%;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        background-color: $dark-blue;
+        color: $white;
+        padding: 1rem 3.5rem;
+        border: 2px solid $dark-blue;
+        transition: background .3s, border .3s, color .4s;
+        
+        &:hover {
+            background-color: transparent;
+            color: $dark-blue;
+        }
+    }
+}

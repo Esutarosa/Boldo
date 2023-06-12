@@ -1,0 +1,28 @@
+// ============== GOOGLE FONTS ============== //
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+// ============== HEIGHT ============== //
+$header-height: 3.5rem;
+
+// ============== COLORS ============== //
+$dark-blue: hsl(209, 73%, 15%);
+$light-blue: hsl(209, 53%, 23%);
+$light-green: hsl(149, 70%, 65%);
+$gray: hsl(0, 0%, 47%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+// ============== FONT AND TYPOGRAPHY ============== //
+$first-font: 'Open Sans', sans-serif;;
+$second-font: 'Manrope', sans-serif;
+
+$small-font-size: .875rem;
+
+// ============== FONT WEIGHT ============== //
+$font-regular: 400;
+$font-medium: 600;
+$font-bold: 700;
+
+// ============== Z INDEX ============== //
+$z-tooltip: 10;
+$z-fixed: 100;

@@ -1,0 +1,75 @@
+.blog {
+    &__content {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-self: center;
+        row-gap: 3.5rem;
+    }
+
+    &__img {
+        display: block;
+        border-radius: .75rem;
+    }
+
+    &__name {
+        margin: 1.5rem 0 .75rem 0;
+        color: $dark-blue;
+        font: {
+            size: 1rem;
+            weight: $font-bold;
+        }
+
+        span {
+            font-weight: $font-regular;
+            color: $gray;
+            margin-left: .75rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            display: block;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        &-name {
+            margin-left: .75rem;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    &__btn {
+        color: $dark-blue;
+        padding: 1rem 3.5rem;
+        border: 2px solid $dark-blue;
+        transition: background .3s, border .3s, color .4s;
+        
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show-blogs {
+    display: block;
+}

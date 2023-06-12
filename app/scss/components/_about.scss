@@ -1,0 +1,83 @@
+.about {
+    background-color: $dark-blue;
+
+    &__title {
+        color: $white;
+        line-height: 2.5rem;
+        text-align: center;
+        font: {
+            size: 1.75rem;
+            family: $second-font;
+        }
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        padding-block: 4.5rem 4rem;
+    }
+
+    &__card {
+        display: grid;
+        width: 350px;
+        background-color: $white;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        margin-inline: .75rem;
+        border-radius: 12px;
+        box-shadow: 0px 12px 32px hsla(0, 0%, 0%, 0.12);
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1rem;
+        
+    }
+
+    &__img {
+        display: block;
+        cursor: pointer;
+    }
+
+    &__item {
+        padding-left: 1rem;
+    }
+
+    &__name, &__socially {
+        color: $dark-blue;
+        cursor: pointer;
+    }
+
+    &__name {
+        margin-bottom: .5rem;
+        font-weight: $font-bold;
+    }
+}
+
+.swiper {
+    &-button {
+        &-prev::after, &-next::after {
+            content: '';
+        }
+
+        &-prev, &-next {
+            bottom: initial;
+            top: 1.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $white;
+            border-radius: 50%;
+            font-size: 1.25rem;
+            color: $dark-blue;
+        }
+
+        &-prev {
+            left: calc(100% - 7rem);;
+        }
+    }
+}

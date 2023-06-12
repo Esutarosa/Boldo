@@ -1,0 +1,63 @@
+.services {
+    &__content {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    &__card {
+        margin-bottom: 2.5rem;
+    }
+
+    &__img {
+        width: 320px;
+        display: block;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        padding: 1.5rem 0 .75rem 0;
+    }
+
+    &__text {
+        color: $gray;
+        font-size: 1.25rem;
+        padding-bottom: 1.75rem;
+    }
+
+    &__button {
+        position: relative;
+        display: inline-flex;
+        font: {
+            size: 1.25rem;
+            weight: $font-bold;
+        }
+        color: $dark-blue;
+
+        i {
+            padding-left: .75rem;
+            transition: transform .3s;
+        }
+
+        &:hover i {
+            transform: translateX(.25rem);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: $dark-blue;
+            height: 2px;
+            width: 0%;
+            transition: width .3s ease-in-out;
+
+            position: absolute;
+            bottom: -.5rem;
+            left: 0;
+        }
+
+        &:hover::after {
+            width: 100%;
+        } 
+    }
+}

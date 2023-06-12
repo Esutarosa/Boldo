@@ -1,0 +1,62 @@
+.footer {
+    padding-block: 4rem 2.5rem;
+
+    &__contant {
+        row-gap: 3rem;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 1.25rem;
+    }
+
+    &__text, &__link, &__copy {
+        color: $gray;
+    }
+
+    &__text {
+        line-height: 1.5rem;
+    }
+
+    &__data {
+        grid-template-columns: repeat(2, max-content);
+        gap: 2.5rem 4rem;
+    }
+
+    &__title {
+        font: {
+            size: 1.25rem;
+            weight: $font-bold;
+        }
+        margin-bottom: 2rem;
+    }
+
+    &__links {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+
+    &__link {
+        transition: color .3s;
+
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+
+    &__new {
+        padding: .45rem .55rem;
+        background-color: $light-green;
+        border-radius: 5rem;
+        font: {
+            size: .813rem;
+            weight: $font-bold;
+        }
+        color: $dark-blue;
+        margin-left: 1rem;
+    }
+
+    &__copy {
+        margin-top: 2rem;
+    }
+}
