@@ -1,2 +1,1 @@
-# curly-spoon
-Website layout
+# Boldo Website layout
